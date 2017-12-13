@@ -5,7 +5,7 @@ import java.sql.Date;
 
 @SuppressWarnings("ALL")
 @Entity
-@Table(name = "[blog]", schema = "dbo", catalog = "springdemo")
+@Table(name = "blog", schema = "dbo", catalog = "springdemo")
 public class BlogEntity {
     private int id;
     private String title;
@@ -15,6 +15,7 @@ public class BlogEntity {
 
     @Id
     @Column(name = "id", nullable = false)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     public int getId() {
         return id;
     }
