@@ -7,11 +7,11 @@ This is just a demo for learning
       2.3.x      |  1.8.x  |    7.0.x   |     2012
 
 
-[学习时参考的文章链接](https://my.oschina.net/gaussik/blog?sort=time&temp=1512221097893)
+
 
 ## Notes
 
-
+[学习时参考的文章链接](https://my.oschina.net/gaussik/blog?sort=time&temp=1512221097893)
 
 1. [数据库的链接配置的问题](http://blog.csdn.net/qac_boy/article/details/75529153)
 
