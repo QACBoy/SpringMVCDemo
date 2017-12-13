@@ -38,7 +38,7 @@
     </database>
     <schema id="12" parent="2" name="dbo">
       <ObjectId>1</ObjectId>
-      <IntrospectionTimestamp>2017-12-13.13:42:23.293</IntrospectionTimestamp>
+      <IntrospectionTimestamp>2017-12-13.17:16:21.387</IntrospectionTimestamp>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -79,19 +79,20 @@
       <ObjectId>16393</ObjectId>
     </schema>
     <table id="25" parent="12" name="blog">
-      <ObjectId>341576255</ObjectId>
-      <CreatedTimestamp>2017-12-09.01:03:10.677</CreatedTimestamp>
-      <ModifiedTimestamp>2017-12-09.01:03:10.737</ModifiedTimestamp>
+      <ObjectId>581577110</ObjectId>
+      <CreatedTimestamp>2017-12-13.15:02:23.273</CreatedTimestamp>
+      <ModifiedTimestamp>2017-12-13.17:14:45.583</ModifiedTimestamp>
     </table>
     <table id="26" parent="12" name="user">
-      <ObjectId>357576312</ObjectId>
-      <CreatedTimestamp>2017-12-09.01:03:10.700</CreatedTimestamp>
-      <ModifiedTimestamp>2017-12-09.01:03:10.737</ModifiedTimestamp>
+      <ObjectId>613577224</ObjectId>
+      <CreatedTimestamp>2017-12-13.15:04:28.763</CreatedTimestamp>
+      <ModifiedTimestamp>2017-12-13.17:14:54.603</ModifiedTimestamp>
     </table>
     <column id="27" parent="25" name="id">
       <Position>1</Position>
       <DataType>int|0</DataType>
       <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
     </column>
     <column id="28" parent="25" name="title">
       <Position>2</Position>
@@ -100,7 +101,7 @@
     </column>
     <column id="29" parent="25" name="content">
       <Position>3</Position>
-      <DataType>varchar(225)|0</DataType>
+      <DataType>varchar(255)|0</DataType>
     </column>
     <column id="30" parent="25" name="user_id">
       <Position>4</Position>
@@ -111,73 +112,69 @@
       <Position>5</Position>
       <DataType>date|0</DataType>
     </column>
-    <index id="32" parent="25" name="PK__blog__3213E83F6B178CBB">
+    <index id="32" parent="25" name="PK__blog__3213E83F14318BC6">
       <Position>1</Position>
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Clustering>1</Clustering>
       <Unique>1</Unique>
     </index>
-    <index id="33" parent="25" name="user_id">
-      <Position>2</Position>
-      <ColNames>user_id</ColNames>
-    </index>
-    <key id="34" parent="25" name="PK__blog__3213E83F6B178CBB">
-      <ObjectId>373576369</ObjectId>
+    <key id="33" parent="25" name="PK__blog__3213E83F14318BC6">
+      <ObjectId>597577167</ObjectId>
       <NameSurrogate>1</NameSurrogate>
-      <CreatedTimestamp>2017-12-09.01:03:10.727</CreatedTimestamp>
-      <ModifiedTimestamp>2017-12-09.01:03:10.727</ModifiedTimestamp>
+      <CreatedTimestamp>2017-12-13.15:02:23.280</CreatedTimestamp>
+      <ModifiedTimestamp>2017-12-13.15:02:23.280</ModifiedTimestamp>
       <ColNames>id</ColNames>
-      <UnderlyingIndexName>PK__blog__3213E83F6B178CBB</UnderlyingIndexName>
+      <UnderlyingIndexName>PK__blog__3213E83F14318BC6</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="35" parent="25" name="FK__blog__user_id__182C9B23">
-      <ObjectId>405576483</ObjectId>
-      <NameSurrogate>1</NameSurrogate>
-      <CreatedTimestamp>2017-12-09.01:03:10.737</CreatedTimestamp>
-      <ModifiedTimestamp>2017-12-09.01:03:10.737</ModifiedTimestamp>
+    <foreign-key id="34" parent="25" name="user_id">
+      <ObjectId>645577338</ObjectId>
+      <CreatedTimestamp>2017-12-13.15:08:52.540</CreatedTimestamp>
+      <ModifiedTimestamp>2017-12-13.15:08:52.540</ModifiedTimestamp>
       <ColNames>user_id</ColNames>
       <RefTableName>user</RefTableName>
-      <RefKeyName>PK__user__3213E83FF1478F57</RefKeyName>
+      <RefKeyName>PK__user__3213E83F74B5A28F</RefKeyName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="36" parent="26" name="id">
+    <column id="35" parent="26" name="id">
       <Position>1</Position>
       <DataType>int|0</DataType>
       <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="37" parent="26" name="nickname">
+    <column id="36" parent="26" name="nickname">
       <Position>2</Position>
       <DataType>varchar(45)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="38" parent="26" name="password">
+    <column id="37" parent="26" name="password">
       <Position>3</Position>
       <DataType>varchar(45)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="39" parent="26" name="first_name">
+    <column id="38" parent="26" name="first_name">
       <Position>4</Position>
       <DataType>varchar(45)|0</DataType>
     </column>
-    <column id="40" parent="26" name="last_name">
+    <column id="39" parent="26" name="last_name">
       <Position>5</Position>
       <DataType>varchar(45)|0</DataType>
     </column>
-    <index id="41" parent="26" name="PK__user__3213E83FF1478F57">
+    <index id="40" parent="26" name="PK__user__3213E83F74B5A28F">
       <Position>1</Position>
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Clustering>1</Clustering>
       <Unique>1</Unique>
     </index>
-    <key id="42" parent="26" name="PK__user__3213E83FF1478F57">
-      <ObjectId>389576426</ObjectId>
+    <key id="41" parent="26" name="PK__user__3213E83F74B5A28F">
+      <ObjectId>629577281</ObjectId>
       <NameSurrogate>1</NameSurrogate>
-      <CreatedTimestamp>2017-12-09.01:03:10.730</CreatedTimestamp>
-      <ModifiedTimestamp>2017-12-09.01:03:10.730</ModifiedTimestamp>
+      <CreatedTimestamp>2017-12-13.15:04:28.767</CreatedTimestamp>
+      <ModifiedTimestamp>2017-12-13.15:04:28.767</ModifiedTimestamp>
       <ColNames>id</ColNames>
-      <UnderlyingIndexName>PK__user__3213E83FF1478F57</UnderlyingIndexName>
+      <UnderlyingIndexName>PK__user__3213E83F74B5A28F</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
   </database-model>

@@ -1,11 +1,11 @@
 package com.qacboy.model;
 
 import javax.persistence.*;
-import java.util.Date;
+import java.sql.Date;
 
 @SuppressWarnings("ALL")
 @Entity
-@Table(name = "blog", schema = "dbo", catalog = "springdemo")
+@Table(name = "[blog]", schema = "dbo", catalog = "springdemo")
 public class BlogEntity {
     private int id;
     private String title;
@@ -34,7 +34,7 @@ public class BlogEntity {
     }
 
     @Basic
-    @Column(name = "content", nullable = true, length = 225)
+    @Column(name = "content", nullable = true, length = 255)
     public String getContent() {
         return content;
     }

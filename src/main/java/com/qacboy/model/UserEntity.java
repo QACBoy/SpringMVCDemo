@@ -5,7 +5,7 @@ import java.util.Collection;
 
 @SuppressWarnings("ALL")
 @Entity
-@Table(name = "user", schema = "dbo", catalog = "springdemo")
+@Table(name = "[user]", schema = "dbo", catalog = "springdemo")
 public class UserEntity {
     private int id;
     private String nickname;
@@ -16,6 +16,7 @@ public class UserEntity {
 
     @Id
     @Column(name = "id", nullable = false)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     public int getId() {
         return id;
     }
