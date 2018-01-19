@@ -2,9 +2,9 @@
 
 This is just a demo for learning
 
- Android Studio  |   JDK   |   tomcat   |   SQLServer   
+ IntelliJ IDEA   |   JDK   |   tomcat   |   SQLServer   
 :----------------|:--------|:-----------|:--------------
-      2.3.x      |  1.8.x  |    7.0.x   |     2012
+     2017.2      |  1.8.x  |    7.0.x   |     2012
 
 
 
